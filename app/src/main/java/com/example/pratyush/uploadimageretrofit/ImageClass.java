@@ -15,6 +15,24 @@ public class ImageClass {
     @SerializedName("response")
     private String Response;
 
+    @SerializedName("extension")
+    private String Extension;
+
+    @SerializedName("time")
+    private String Time;
+
+    @SerializedName("venue")
+    private String Venue;
+
+    @SerializedName("date")
+    private String Date;
+
+    @SerializedName("description")
+    private String Description;
+
+    @SerializedName("title")
+    private String Title;
+
     public String getResponse() {
 
         //return Response;

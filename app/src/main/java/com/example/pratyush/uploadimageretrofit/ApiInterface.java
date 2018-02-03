@@ -16,10 +16,12 @@ public interface ApiInterface {
 
 
 
-    //@Multipart
+
     @FormUrlEncoded
     @POST("dbUpload")
-    Call<ImageClass> uploadImage(@Field("image")String image);
+    Call<ImageClass> uploadImage(@Field("image")String image,@Field("extension")String extension,
+                                 @Field("title")String title,@Field("date")String date,@Field("venue")String venue,
+                                 @Field("time")String time,@Field("description")String description);
 
 
 }

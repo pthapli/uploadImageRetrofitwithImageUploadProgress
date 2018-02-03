@@ -2,10 +2,37 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+
     </style>
+
+    <style name="CustomToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="android:background">@color/colorNotifi</item>
+        <item name="android:actionOverflowButtonStyle">@style/actionOverflowButtonStyle</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_keyboard_arrow_left_white_24dp</item>
+        <!--<item name="windowNoTitle">false</item>-->
+
+    </style>
+
+
+
+    <style name="CustomPopupTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:background">@color/colorWhite</item>
+
+
+
+    </style>
+
+    <style name="actionOverflowButtonStyle" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/colorWhite</item>
+    </style>
+
+
+
+
+
+
 
 </resources>
