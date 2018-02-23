@@ -51,31 +51,11 @@
 
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/imageview"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_centerInParent="true"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="40dp"
-                    android:visibility="gone"
-                    android:src="@drawable/ic_launcher_foreground"/>
-
-                <ProgressBar
-                    android:id="@+id/progressbar"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:visibility="gone"/>
-            </RelativeLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 >
 
                 <android.support.design.widget.TextInputEditText
@@ -90,7 +70,7 @@
 
 
 
-            <Button
+            <!--<Button
                 android:id="@+id/chooseimage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,7 +80,7 @@
                 android:text="Attachments"
                 android:textAlignment="textStart"
                 android:visibility="gone"
-                android:textAllCaps="false" />
+                android:textAllCaps="false" />-->
 
 
 
@@ -121,6 +101,13 @@
                     android:drawableLeft="@drawable/ic_crop_original_black_24dp"
                     android:drawablePadding="10dp"
                     />
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
 
                 <Button
                     android:layout_width="30dp"
@@ -157,11 +144,16 @@
 
                     <android.support.design.widget.TextInputEditText
                         android:id="@+id/timenotice"
+
                         android:layout_width="120dp"
                         android:layout_marginLeft="10dp"
                         android:layout_height="wrap_content"
                         android:hint="Time"
                         android:inputType="time"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
                          />
 
 
@@ -191,7 +183,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="40dp"
                         android:hint="Date"
-                        android:inputType="date" />
+                        android:inputType="date"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"/>
 
                 <!--</android.support.design.widget.TextInputLayout>-->
 
@@ -251,7 +247,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@id/scrollView"
         android:padding="8dp"
         android:layout_gravity="center"
         android:background="@color/colorNotifi"

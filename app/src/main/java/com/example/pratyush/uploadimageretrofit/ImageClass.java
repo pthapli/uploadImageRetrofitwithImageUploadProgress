@@ -39,5 +39,19 @@ public class ImageClass {
         return Response;
     }
 
+   /*private String extension;
+   private String time;
+   private String date;
+   private String venue;
+   private String description;
+   private String title;
 
+    public ImageClass(String extension, String time, String date, String venue, String description, String title) {
+        this.extension = extension;
+        this.time = time;
+        this.date = date;
+        this.venue = venue;
+        this.description = description;
+        this.title = title;
+    }*/
 }
